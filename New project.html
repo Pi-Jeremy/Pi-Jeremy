@@ -1,0 +1,65 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Pocket Salon | SignUp</title>
+    <link rel="stylesheet" href="./signup.css"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <form Id="theForm"method="POST"type="submit" action="index.html">
+<div class="formContainer">
+<h1>Sign Up Form</h1>
+<hr>
+<label for="email"><b>Email</b></label>
+<input type="email" placeholder="Enter Email" name="email" required>
+<label for="password"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="password" required>
+<label for="confirmPassword"><b>Confirm Password</b></label>
+<input type="password" placeholder="Repeat Password" name="confirmPassword"
+required>
+<medium id="confirmPassword-feedback"></medium>
+<br>
+<br>
+<label>
+<input type="checkbox" checked="checked" name="remember" style="marginbottom: 15px"> Remember me
+</label>
+<p>By creating an account you agree to our <a href="#"
+style="color:dodgerblue">Terms & Privacy</a><p>
+<div>
+<button type="reset"class="cancel">Cancel</button>
+<button type="submit" class="signup">Sign Up</button>
+</div>
+</div>
+</form>
+<script>
+const form = document.getElementById("theForm");
+const password = form.password;
+const confirmPassword = form.confirmPassword;
+const feedback = document.getElementById("confirmPassword-feedback");
+let isPasswordMatch = false;
+
+confirmPassword.addEventListener("input", () => {
+        if (password.value != confirmPassword.value) {
+          feedback.innerHTML = "Password did not match.";
+          isPasswordMatch = false;
+        } else {
+          feedback.innerHTML = "";
+          isPasswordMatch = true;
+        }
+      });
+
+form.onsubmit = function () {
+        if (isPasswordMatch) {
+          alert("Form submitted. Great!");
+          return true;
+        }
+        alert("Wait! Password did not match.");
+        return false;
+      };
+</script>
+</body>
+</html>
