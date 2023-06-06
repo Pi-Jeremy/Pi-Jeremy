@@ -344,7 +344,7 @@
 
         <div class="contact-form">
 
-            <form action="submit" href="mailto: jeremybrownpo@gmail.com">
+            <form onsubmit="sendEmail(); reset(); return false;">
 
                 <input type="text" placeholder="Enter Your Name" required>
 
@@ -365,7 +365,35 @@
         <p>&#169; Jeremy All Rights Reserved.</p>
 
     </div>
+<!-- smtp js-->
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<!-- smtp function-->
+<script>
+    function sendEmail(){
+            Email.send({
 
+    Host : "smtp.gmail.com",
+
+    Username : "jeremybrownpo@gmail.com",
+
+    Password : "pimunguj",
+
+    To : 'pimungujeremy@gmail.com',
+
+    From : document.getElementById("email").value,
+
+    Subject : "New email inquiry",
+
+    Body : "And this is the body"
+
+}).then(
+
+  message => alert(message)
+
+);
+        }
+</script>
 <!-- Scroll Refeal Js file -->
 
 <script src="https://unpkg.com/scrollreveal"></script>
