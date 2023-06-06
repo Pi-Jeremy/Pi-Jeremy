@@ -346,11 +346,11 @@
 
             <form onsubmit="sendEmail(); reset(); return false;">
 
-                <input type="text" placeholder="Enter Your Name" required>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
 
-                <input type="email" name="" id="" placeholder="Enter Your email" required>
+                <input type="email" name="" id="email" placeholder="Enter Your email" required>
 
-                <textarea id="" name="" cols="30" rows="10" placeholder="Write Your Message Here......" required></textarea>
+                <textarea id="massage" name="" cols="30" rows="10" placeholder="Write Your Message Here......" required></textarea>
 
                 <input type="submit" value="Send" class="send-btn">
 
@@ -385,11 +385,12 @@
 
     Subject : "New email inquiry",
 
-    Body : "And this is the body"
-
+    Body : "Name: " + document.getElementById("name").value
+           + <br> "Email: " + document.getElementById("email")
+           + <br> "Message: " + document.getElementById("massage")
 }).then(
 
-  message => alert(message)
+  message => alert("Message was sent successfully")
 
 );
         }
