@@ -1,0 +1,26 @@
+body {
+  margin: 5;
+  padding: 5;
+  font-family: Arial, sans-serif;
+  border: 2px solid black;
+  border-radius:20px;
+  background-color: #3f78ff;
+  box-sizing:border-box;
+}
+
+.thank-you-container {
+  text-align: center;
+  margin-top: 2px;
+}
+h1 {
+  color: #333;
+}
+
+p {
+  color: #ffffff;
+}
+.emoji{
+    font-size:100px;
+    text-align: center;
+    margin-bottom:2px;
+}
