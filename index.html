@@ -99,7 +99,7 @@
 
 
         </div>
-<h2><span>Reach</span>me<h2>
+<h1><span>Reach</span>me<h1>
         <div class="social">
 
             <a href="https://github.com/Pi-Jeremy"><i class='bx'>
@@ -357,13 +357,13 @@
 
         <div class="contact-form">
 
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <!--<form onsubmit="sendEmail(); reset(); return false;">-->
+                <form action="https://formsubmit.co/jeremybrownpo.com" method="POST">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
 
-                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Enter Your email" required>
 
-                <input type="email" name="" id="email" placeholder="Enter Your email" required>
-
-                <textarea id="massage" name="" cols="30" rows="10" placeholder="Write Your Message Here......" required></textarea>
+                <textarea id="massage" name="massage" cols="30" rows="10" placeholder="Write Your Message Here......" required></textarea>
 
                 <input type="submit" value="Send" class="send-btn">
 
@@ -379,10 +379,10 @@
 
     </div>
 <!-- smtp js-->
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
+<!--<<script src="https://smtpjs.com/v3/smtp.js">
+</script>-->
 <!-- smtp function-->
-<script>
+<!--<script>
     function sendEmail(){
             Email.send({
 
@@ -390,7 +390,7 @@
 
     Username : "jeremybrownpo@gmail.com",
 
-    Password : "pimunguj",
+    Password : "",
 
     To : 'pimungujeremy@gmail.com',
 
@@ -407,7 +407,7 @@
 
 );
         }
-</script>
+</script>-->
 <!-- Scroll Refeal Js file -->
 
 <script src="https://unpkg.com/scrollreveal"></script>
