@@ -24,3 +24,51 @@ p {
     text-align: center;
     margin-bottom:2px;
 }
+/*construction*/
+.construction .back-btn{
+
+  align-items: center;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  margin-top: 10px;
+
+  height: 30%;
+
+  width: 100%;
+
+}
+
+.construction .back-btn a{
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  padding: 12px 15px;
+
+  background-color: white;
+
+  font-weight: 600;
+
+}
+
+.construction a.yellow{
+
+  color: white;
+
+  background-color: #FDC93B;
+
+  transition: 0.3s ease
+
+}
+
+.construction a.yellow:hover{
+
+  color:#FDC93B;
+
+  background-color: white;
+
+}
