@@ -46,13 +46,12 @@ header{
     display:flex;
     align-items: center;
     justify-content:space-between;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
     background:#ffffff;
     padding:18px 10%;
     transition:0.2s;
 }
 header .shadow{
-    box-shadow:0 0 4px rgb(14 55 54 / 15%)
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
 }
 .logo{
     font-size:1.1rem;
